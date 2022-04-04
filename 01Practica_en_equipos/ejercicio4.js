@@ -1,4 +1,4 @@
-function ejercicio4(salario_mensual, antiguedad,){
+function ejercicio4(salario_mensual, antiguedad){
 
     var utlidad_anual
 
