@@ -1,23 +1,4 @@
 
-
-    document.getElementById("resultado").innerHTML="";
-    if(exp.test(num1)){
-        document.getElementById("notificacion").innerHTML="Esperando datos";
-        if(exp.test(num2)){
-            document.getElementById("notificacion").innerHTML="Esperando datos";
-            if(exp.test(num3)){
-                document.getElementById("notificacion").innerHTML="";
-                console.log("1er: "+num1+, 2do: "+num2+", 3er: "+num3);
-                //llamar a la función
-                calcularMayor(num1,num2,num3);
-            }else{
-                document.getElementById("notificacion").innerHTML="El valor del número 3 no es válido :(";
-                document.getElementById("3numero").focus();
-            }
-        }else{
-            document.getElementById("notificacion").innerHTML="El valor del número 2 no es válido :(";
-            document.getElementById("2numero").focus();
-        }
     }else{
         document.getElementById("notificacion").innerHTML="El valor del número 1 no es válido :(";
         document.getElementById("1numero").focus();
