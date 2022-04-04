@@ -1,11 +1,5 @@
 
-    }else{
-        document.getElementById("notificacion").innerHTML="El valor del número 1 no es válido :(";
-        document.getElementById("1numero").focus();
-    }
-
-}
-
+  
 function calcularMayor(){
     var n1=document.getElementById("1numero").value;
     var n2=document.getElementById("2numero").value;
