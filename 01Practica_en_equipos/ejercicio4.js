@@ -1,4 +1,7 @@
-function ejercicio4(salario_mensual, antiguedad){
+function ejercicio4(){
+
+    var salario_mensual = document.getElementById('salario_mensual').value;
+    var antiguedad = document.getElementById('antiguedad').value;
 
     var utlidad_anual
 
@@ -8,19 +11,19 @@ function ejercicio4(salario_mensual, antiguedad){
 
         utlidad_anual = 12 * (salario_mensual * 1.05)
 
-    } else if (antiguedad => 1 && antiguedad < 2){
+    } else if ( antiguedad < 2 && antiguedad >= 1){
 
         utlidad_anual = 12 * (salario_mensual * 1.07)
 
-    } else if (antiguedad => 2 && antiguedad < 5){
+    } else if (antiguedad >= 2 && antiguedad < 5){
 
         utlidad_anual = 12 * (salario_mensual * 1.10)
 
-    } else if (antiguedad => 5 && antiguedad < 10){
+    } else if (antiguedad >= 5 && antiguedad < 10){
 
         utlidad_anual = 12 * (salario_mensual * 1.15)
 
-    } else if (antiguedad => 10){
+    } else if (antiguedad >= 10){
 
         utlidad_anual = 12 * (salario_mensual * 1.20)
 
