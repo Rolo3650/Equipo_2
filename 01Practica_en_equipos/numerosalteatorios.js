@@ -1,11 +1,4 @@
-function validar(formulario){
-    var n1=document.getElementById("1numero").value;
-    var n2=document.getElementById("2numero").value;
-    var n3=document.getElementById("3numero").value;
-    var num1=parseInt(n1);
-    var num2=parseInt(n2);
-    var num3=parseInt(n3);
-    var exp=/^\d{1,6}$/;
+
 
     document.getElementById("resultado").innerHTML="";
     if(exp.test(num1)){
