@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../01Practica_en_equipos/01Practica_en_equipos/CSS/CSS_js.css">
+    <link rel="stylesheet" href="../01Practica_en_equipos/01Practica_en_equipos/CSS/style.css">
+    <title>JavaScript</title>
+</head>
+<body>
+    <header>
+        <h2 class="logo">MOLLY</h2>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+        <nav class="menu">
+            <a href="../01Practica_en_equipos/index.html">Inicio</a>
+            <a href="#">Sobre nosotros</a>
+            <a href="../01Practica_en_equipos/Actividades.html">Actividades</a>
+            <label for="check" class="esconder-menu">
+                &#215
+            </label>
+        </nav>
+    </header>
+    <section class="principal">
+        <div class="id">
+            <span class="text1">Ejercicios de JavaScript</span>
+        </div>
+    </section>
+
+    <section id="problema_1">
+        <div class="contenidoA">
+            <div class="daniela">
+                <img src="../01Practica_en_equipos/01Practica_en_equipos/Imagenes/Daniela.jpeg" alt="">
+            </div>
+            <div class="head">
+                <h6 class="titulo_p">EJERCICIO 1</h6>
+            </div>
+            <div class="contenido_p">
+                <p>
+                    <br>
+                    Leer 2 numeros; si son iguales que los multiplique, si el primero es mayor que el segundo
+                    que los reste y si no que los sume.
+                </p>
+                <br>
+                <table>
+                    <tr>
+                        <th><h1>Primer numero</h1></th><th><h1>Segundo Numero</h1></th><th><h1>Resultado</h1></th>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="Valor" id="primeroI"></td><td><input type="number" name="Valor" id="segundoI"></td><td><span id="resultado"></span></td>
+                    </tr>
+                </table>
+
+                <button class="saber-mas" onclick="calcular();">Calcula</button>
+                <button class="saber-mas" onclick="borrardatos();">Borrar Datos</button>
+            </div>
+        </div>
+
+        <div class="contenidoA">
+            <div class="daniela">
+                <img src="../01Practica_en_equipos//01Practica_en_equipos/Imagenes/Eldad.jpg" alt="">
+            </div>
+            <div class="head">
+                <h6 class="titulo_p">EJERCICIO 2</h6>
+            </div>
+            <div class="contenido_p">
+                <p>
+                    <br>
+                    Leer tres numeros diferentes e imprimir el numero mayor de los tres
+                </p>
+                <br>
+                <table>
+                    <tr>
+                        <th><h1>Numero 1</h1></th><th><h1>Numero 2</h1></th><th><h1>Numero 3</h1></th><th><h1>Mayor</h1></th>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="Valor" id="1numero"></td><td><input type="number" name="Valor" id="2numero"></td><td><input type="number" name="Valor" id="3numero"></td><td><span id="resultado"></span></td>
+                    </tr>
+                </table>
+
+                <button class="saber-mas" onclick="calcularMayor();">Calcular</button>
+                <button class="saber-mas" type="reset"">Borrar Datos</button>
+            </div>
+        </div>
+
+        <div class="contenidoA">
+            <div class="daniela">
+                <img src="../01Practica_en_equipos/01Practica_en_equipos/Imagenes/Sajo.jpg" alt="">
+            </div>
+            <div class="head">
+                <h6 class="titulo_p">EJERCICIO 3</h6>
+            </div>
+            <div class="contenido_p">
+                <p>
+                    <br>
+                    Determinar la cantidad de dinero que recibirá un trabajador por concepto de las horas extra
+                    trabajadas en una empresa, sabiendo que cuando las horas de trabajo exceden de 40, el resto se
+                    consideran horas extras y que estas se pagan al doble de una hora normal cuando no exceden de 8;
+                    si las horas extra exceden de 8 se pagan las primeras 8 al doble de lo que se pagan las horas normales
+                    y el resto al triple
+                </p>
+                <br>
+
+                <table>
+                    <tr>
+                        <th><h1>Horas</h1></th><th><h1>Salario</h1></th><th><h1>Dinero</h1></th>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="Valor" id="horas"></td><td><input type="number" name="Valor" id="salario"></td><td><span id="dinero"></span></td>
+                    </tr>
+                </table>
+
+                <button class="saber-mas" onclick="ejercicio3();">Calcular</button>
+                <button class="saber-mas" type="reset";">Borrar Datos</button>
+            </div>
+        </div>
+
+        <div class="contenidoA">
+            <div class="daniela">
+                <img src="../01Practica_en_equipos//01Practica_en_equipos/Imagenes/Rodrigo.jpg" alt="">
+            </div>
+            <div class="head">
+                <h6 class="titulo_p">EJERCICIO 4</h6>
+            </div>
+            <div class="contenido_p">
+                <p>
+                    <br>
+                    Calcular la utilidad que un trabajador recibe en el reparto anual de utilidades si este se le asignia 
+                    como un porcentaje de un salario mensual que depende de su antigüedad en la empresa...
+                </p>
+                <br>
+
+                <table>
+                    <tr>
+                        <th><h1>Salario</h1></th><th><h1>Antigüedad</h1></th><th><h1>Resultado</h1></th>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="Valor" id="salario_mensual"></td><td><input type="number" name="Valor" id="antiguedad"></td><td><span id="#output4"></span></td>
+                    </tr>
+                </table>
+
+                <button class="saber-mas" onclick="ejercicio4(documento.getElementByID('salario_mensual').value, documento.getElementByID('antiguedad').value,);">Calcular</button>
+                <button class="saber-mas" type="reset">Borrar Datos</button>
+            </div>
+            
+        </div>
+    </section>
+</body>
+</html>
