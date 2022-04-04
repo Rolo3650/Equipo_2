@@ -48,7 +48,7 @@ function calcularMayor(){
         if(numero1<numero3){
             document.getElementById("resultado").innerHTML="El número mayor es: "+numero3";
         }else{
-            document.getElementById("resultado").innerHTML="El número mayor es: "+numero1#;
+            document.getElementById("resultado").innerHTML="El número mayor es: "+numero1";
         }
     }
 }
