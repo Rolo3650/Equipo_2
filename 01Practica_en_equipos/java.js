@@ -14,7 +14,7 @@ function validar(formulario){
             document.getElementById("notificacion").innerHTML="Esperando datos";
             if(exp.test(num3)){
                 document.getElementById("notificacion").innerHTML="";
-                console.log("1er: "+num1+", 2do: "+num2+", 3er: "+num3);
+                console.log("1er: "+num1+", 2do: "+num2+", 3er: "+num3");
                 //llamar a la función
                 calcularMayor(num1,num2,num3);
             }else{
