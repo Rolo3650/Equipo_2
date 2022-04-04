@@ -61,10 +61,8 @@ section.principal div.id{
 }
 
 .contenidoA{
-    margin: 60px auto 15px;
-    width: 768px;
-    position: relative;
-    right: 500px;
+    margin: 10px 30px;
+    width: auto;
 }
 
 .head h6{
