@@ -32,10 +32,10 @@ function validar(formulario){
 
 }
 
-function calcularMayor(n1,n2,n3){
-    var numero1=n1;
-    var numero2=n2;
-    var numero3=n3;
+function calcularMayor(){
+    var n1=document.getElementById("1numero).value;
+    var n2=document.getElementById("2numero).value;
+    var n3=document.getElementById("3numero).value;
     console.log("1er: "+numero1+", 2do: "+numero2+", 3er: "+numero3);
 
     if(numero1<numero2){
